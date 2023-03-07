@@ -1,0 +1,89 @@
+/*
+seletor{
+    propriedade:valor;
+}
+*/
+
+body{
+    background-color: #222831;
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    background-color: #EEEEEE;
+    width: 80%; /*largura inicial*/
+    max-width: 340px; /*largura máxima (340 + 60 do padding)*/
+    text-align: center;        
+    margin: 50px auto;  /*vertical (top/bottom) horizontal (left/right)*/
+    padding: 30px; /*espaçamento interno*/
+    border-radius: 10px;
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #222831;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #393E46;
+    font-size: 32px;
+    margin: 0;
+}
+
+h2{
+    color: #222831;
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    color: #666666;
+    /*font-size: 16px; 16 já é o tamanho inicial*/
+    margin-top: 15px;
+}
+
+ul{    
+    list-style-type: none; /*retirando o marcador da lista*/
+    padding: 0;
+    margin: 30px 0;
+    /*margin-top: 30px;
+    margin-bottom: 30px;*/    
+}
+
+/*todos os links*/
+a{
+    color: #222831;
+}
+
+/*todos os links que estão DENTRO de um <li>*/
+li a{
+    display: block;    
+    background-color: #393E46; /*cor de fundo*/
+    color: white; /*cor do texto*/
+    text-decoration: none; /*retira o sublinhado dos links*/
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+/*ao passar o mouse*/
+li a:hover{
+    background-color: #000000;
+}
+
+
+/*MEDIA QUERIES*/
+/*Para telas de até 450px*/
+@media (max-width: 450px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    img{
+        width: 80px;
+    }
+
+}
